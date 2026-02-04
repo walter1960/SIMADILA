@@ -545,3 +545,40 @@ footer {
         font-size: 18px;
     }
 }
+/* Donation Hero Section */
+.donation-hero { background-color: var(--primary); color: white; padding: 60px 20px; text-align: center; }
+.donation-hero h2 { color: var(--accent); font-size: 2.5rem; margin-bottom: 20px; }
+.donation-hero p { font-size: 1.2rem; max-width: 800px; margin: 0 auto 30px; }
+.donation-cta-group { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+.btn-large { padding: 15px 40px; font-size: 1.2rem; border-radius: 50px; font-weight: 700; }
+.btn-gold { background-color: var(--accent); color: var(--primary); }
+.btn-outline-white { border: 2px solid white; color: white; background: transparent; }
+.btn-outline-white:hover { background: white; color: var(--primary); }
+/* Payment API Container */
+.payment-api-container { background: #fff; padding: 20px; border-radius: 10px; border: 1px solid #eee; margin-top: 20px; }
+.payment-logos { display: flex; justify-content: center; gap: 15px; margin-bottom: 20px; color: #444; }
+/* Bank Details Direct */
+.bank-details-direct { background: var(--light); color: var(--dark); padding: 30px; border-radius: 15px; text-align: left; margin-top: 30px; border: 2px dashed #ccc; }
+.bank-details-direct h3 { color: var(--primary); border-bottom: 2px solid var(--secondary); padding-bottom: 10px; margin-bottom: 20px; }
+
+/* Footer Redesign - Compact & Dynamic */
+footer { background-color: var(--dark); color: #e0e0e0; padding: 0; margin-top: auto; font-size: 0.9rem; }
+/* Social Strip */
+.social-strip { background-color: #1a1d20; padding: 15px 0; text-align: center; border-bottom: 1px solid #333; }
+.social-strip h4 { display: inline-block; margin-right: 20px; color: var(--light); font-weight: 500; }
+.social-icons { display: inline-block; }
+.social-icons a { color: #ccc; font-size: 1.2rem; margin: 0 10px; transition: var(--transition); }
+.social-icons a:hover { color: var(--accent); transform: translateY(-3px) scale(1.2); }
+/* Footer Main Content */
+.footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; padding: 40px 0; }
+.footer-column h3 { color: var(--secondary); font-size: 1.1rem; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; position: relative; display: inline-block; }
+.footer-column h3::after { content: ''; display: block; width: 30px; height: 2px; background: var(--accent); margin-top: 5px; transition: width 0.3s ease; }
+.footer-column:hover h3::after { width: 100%; }
+.footer-column ul { list-style: none; padding: 0; }
+.footer-column ul li { margin-bottom: 10px; }
+.footer-column ul li a { color: #bbb; text-decoration: none; transition: var(--transition); display: inline-block; }
+.footer-column ul li a:hover { color: var(--accent); transform: translateX(5px); }
+.copyright { text-align: center; padding: 20px 0; background-color: #111; font-size: 0.8rem; color: #777; border-top: 1px solid #222; }
+/* Membership Form */
+.join-form-container { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); max-width: 700px; margin: 0 auto; border-top: 5px solid var(--primary); }
+.join-form-container h3 { text-align: center; color: var(--primary); margin-bottom: 30px; }

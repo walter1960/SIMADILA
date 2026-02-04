@@ -4,25 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simadila Educ’Action - Éducation pour tous</title>
-    <!-- Fonts -->
+    <title>Simadila Educ’Action - Devenir Membre</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap"
         rel="stylesheet">
-    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
-
-    <!-- Header -->
     <header>
         <div class="container header-container">
             <a href="index.html" class="logo">
                 <img src="staticfiles/img/LOGO DE SIMADILA.jpeg" alt="Logo Simadila" class="logo-img">
                 <div>Simadila <span>Educ’Action</span></div>
             </a>
-            <!-- Hamburger Button -->
             <button class="hamburger" aria-label="Menu">
                 <span></span>
                 <span></span>
@@ -30,49 +26,65 @@
             </button>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="index.html">Accueil</a></li>
                     <li><a href="mission.html">Mission</a></li>
                     <li><a href="about.html">À Propos</a></li>
-                    <li><a href="join.html">Adhérer</a></li>
+                    <li><a href="join.html" class="active">Adhérer</a></li> <!-- New Link -->
                     <li><a href="gallery.html">Galerie</a></li>
                     <li><a href="videos.html">Vidéos</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li><a href="donate.html" class="btn-donate-nav">Faire un Don</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section (Dynamic Video) -->
-    <section class="hero" id="accueil">
-        <!-- Video Background -->
-        <video autoplay muted loop class="video-background" poster="staticfiles/img/boy-holding-white-paper-school.jpg">
-            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
-                type="video/mp4">
-            Votre navigateur ne supporte pas la lecture de vidéos.
-        </video>
-
-        <div class="hero-overlay"></div>
-
-        <div class="container hero-content">
-            <h1>Éducation pour Tous en Afrique de l'Ouest</h1>
-            <p>Une initiative nécessaire et urgente de partage d'idées à travers l'action éducative, la connexion au
-                monde et une volonté accrue d'apprendre.</p>
-            <a href="mission.html" class="btn">Découvrir notre mission</a>
-        </div>
-    </section>
-
-    <!-- NEW: Donation Hero Section -->
-    <section class="donation-hero">
+    <section class="section">
         <div class="container">
-            <h2>Votre Soutien est Essentiel</h2>
-            <p>Aidez-nous à offrir un avenir meilleur aux enfants. Chaque geste compte.</p>
-            <div class="donation-cta-group">
-                <a href="donate.html" class="btn btn-large btn-gold">
-                    <i class="fas fa-heart"></i> FAIRE UN DON
-                </a>
-                <a href="donate.html" class="btn btn-large btn-outline-white">
-                    <i class="fas fa-university"></i> VIREMENT BANCAIRE
-                </a>
+            <h2 class="section-title">Rejoindre l'Association</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 40px;">
+                Devenez acteur du changement en adhérant à Simadila Educ'Action. Ensemble, construisons l'avenir.
+            </p>
+
+            <div class="join-form-container fade-in">
+                <h3>Formulaire d'Adhésion</h3>
+                <form action="mailto:contact@simadila.org?subject=Nouvelle Demande Adhésion" method="post"
+                    enctype="text/plain">
+                    <div class="form-group">
+                        <label>Identité</label>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                            <input type="text" name="nom" placeholder="Nom" required>
+                            <input type="text" name="prenom" placeholder="Prénom" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Coordonnées</label>
+                        <input type="email" name="email" placeholder="Adresse Email" required
+                            style="margin-bottom: 15px;">
+                        <input type="tel" name="phone" placeholder="Numéro de Téléphone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Adresse Postale</label>
+                        <input type="text" name="address" placeholder="Rue, Ville, Code Postal, Pays">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Profession / Compétences</label>
+                        <input type="text" name="profession" placeholder="Votre métier ou domaine d'expertise">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Pourquoi souhaitez-vous nous rejoindre ?</label>
+                        <textarea name="motivation" rows="4" placeholder="Dites-nous en quelques mots..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-large" style="width: 100%;">Envoyer la demande</button>
+                    <p style="text-align: center; margin-top: 15px; font-size: 0.85rem; color: #666;">
+                        En cliquant sur Envoyer, votre client mail s'ouvrira avec vos informations préremplies.
+                    </p>
+                </form>
             </div>
         </div>
     </section>
@@ -84,7 +96,7 @@
             <div class="container">
                 <h4>Nous suivre :</h4>
                 <div class="social-icons">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a> <!-- X/Twitter -->
                     <a href="#"><i class="fab fa-linkedin"></i></a>
                     <a href="#"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-youtube"></i></a>
@@ -132,8 +144,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 
