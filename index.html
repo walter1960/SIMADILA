@@ -1,140 +1,17 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simadila Educ’Action - Éducation pour tous</title>
     <!-- Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap"
-        rel="stylesheet">
-    <!-- Styles -->
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-
-    <!-- Header -->
-    <header>
-        <div class="container header-container">
-            <a href="index.html" class="logo">
-                <img src="staticfiles/img/LOGO DE SIMADILA.jpeg" alt="Logo Simadila" class="logo-img">
-                <div>Simadila <span>Educ’Action</span></div>
-            </a>
-            <!-- Hamburger Button -->
-            <button class="hamburger" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html" class="active">Accueil</a></li>
-                    <li><a href="mission.html">Mission</a></li>
-                    <li><a href="about.html">À Propos</a></li>
-                    <li><a href="join.html">Adhérer</a></li>
-                    <li><a href="gallery.html">Galerie</a></li>
-                    <li><a href="videos.html">Vidéos</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Hero Section (Dynamic Video) -->
-    <section class="hero" id="accueil">
-        <!-- Video Background -->
-        <video autoplay muted loop class="video-background" poster="staticfiles/img/boy-holding-white-paper-school.jpg">
-            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
-                type="video/mp4">
-            Votre navigateur ne supporte pas la lecture de vidéos.
-        </video>
-
-        <div class="hero-overlay"></div>
-
-        <div class="container hero-content">
-            <h1>Éducation pour Tous en Afrique de l'Ouest</h1>
-            <p>Une initiative nécessaire et urgente de partage d'idées à travers l'action éducative, la connexion au
-                monde et une volonté accrue d'apprendre.</p>
-            <a href="mission.html" class="btn">Découvrir notre mission</a>
-        </div>
-    </section>
-
-    <!-- NEW: Donation Hero Section -->
-    <section class="donation-hero">
-        <div class="container">
-            <h2>Votre Soutien est Essentiel</h2>
-            <p>Aidez-nous à offrir un avenir meilleur aux enfants. Chaque geste compte.</p>
-            <div class="donation-cta-group">
-                <a href="donate.html" class="btn btn-large btn-gold">
-                    <i class="fas fa-heart"></i> FAIRE UN DON
-                </a>
-                <a href="donate.html" class="btn btn-large btn-outline-white">
-                    <i class="fas fa-university"></i> VIREMENT BANCAIRE
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- NEW COMPACT FOOTER -->
-    <footer>
-        <!-- Social Strip -->
-        <div class="social-strip">
-            <div class="container">
-                <h4>Nous suivre :</h4>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-tiktok"></i></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="footer-content">
-                <!-- Column 1: Essentials -->
-                <div class="footer-column">
-                    <h3>L'Essentiel</h3>
-                    <ul>
-                        <li><a href="about.html">Qui sommes-nous ?</a></li>
-                        <li><a href="mission.html">Notre Mission</a></li>
-                        <li><a href="join.html">Adhérer</a></li>
-                        <li><a href="news.html">Actualités</a></li>
-                        <li><a href="publications.html">Publications</a></li>
-                    </ul>
-                </div>
-
-                <!-- Column 2: Services -->
-                <div class="footer-column">
-                    <h3>Services</h3>
-                    <ul>
-                        <li><a href="services.html">Appels d'offres</a></li>
-                        <li><a href="services.html#prestataires">Devenir Prestataire</a></li>
-                        <li><a href="services.html#politiques">Politiques de l'Asso</a></li>
-                        <li><a href="donate.html">Faire un Don</a></li>
-                    </ul>
-                </div>
-
-                <!-- Column 3: Contact (Condensed) -->
-                <div class="footer-column">
-                    <h3>Contact</h3>
-                    <p style="margin-bottom: 10px;"><i class="fas fa-envelope"></i> contact@simadila.org</p>
-                    <p style="margin-bottom: 10px;"><i class="fas fa-phone"></i> +33 7 50 61 37 35</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Paris, France</p>
-                </div>
-            </div>
-
-            <div class="copyright">
-                <p>&copy; 2026 Simadila Educ’Action. Tous droits réservés.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="script.js"></script>
-</body>
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
