@@ -4,25 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simadila Educ’Action - Éducation pour tous</title>
-    <!-- Fonts -->
+    <title>Simadila Educ’Action - Vidéos</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap"
         rel="stylesheet">
-    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
-    <!-- Header -->
     <header>
         <div class="container header-container">
             <a href="index.html" class="logo">
                 <img src="staticfiles/img/LOGO DE SIMADILA.jpeg" alt="Logo Simadila" class="logo-img">
                 <div>Simadila <span>Educ’Action</span></div>
             </a>
-            <!-- Hamburger Button -->
             <button class="hamburger" aria-label="Menu">
                 <span></span>
                 <span></span>
@@ -30,37 +25,42 @@
             </button>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="index.html">Accueil</a></li>
                     <li><a href="mission.html">Mission</a></li>
                     <li><a href="about.html">À Propos</a></li>
                     <li><a href="gallery.html">Galerie</a></li>
-                    <li><a href="videos.html">Vidéos</a></li>
+                    <li><a href="videos.html" class="active">Vidéos</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section (Dynamic Video) -->
-    <section class="hero" id="accueil">
-        <!-- Video Background -->
-        <video autoplay muted loop class="video-background" poster="staticfiles/img/boy-holding-white-paper-school.jpg">
-            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
-                type="video/mp4">
-            Votre navigateur ne supporte pas la lecture de vidéos.
-        </video>
-
-        <div class="hero-overlay"></div>
-
-        <div class="container hero-content">
-            <h1>Éducation pour Tous en Afrique de l'Ouest</h1>
-            <p>Une initiative nécessaire et urgente de partage d'idées à travers l'action éducative, la connexion au
-                monde et une volonté accrue d'apprendre.</p>
-            <a href="mission.html" class="btn">Découvrir notre mission</a>
+    <section class="section" id="videos">
+        <div class="container">
+            <h2 class="section-title">Nos Vidéos</h2>
+            <div class="video-grid">
+                <div class="video-item">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0" title="Vidéo présentation"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video-item">
+                    <iframe src="https://www.youtube.com/embed/lxSyg1QyCvw?controls=0" title="Reportage terrain"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video-item">
+                    <!-- Placeholder -->
+                    <div
+                        style="width:100%; height:100%; display:flex; align-items:center; justify-content:center; background:#eee; color:#666;">
+                        Plus de vidéos bientôt...
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -92,8 +92,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 

@@ -4,25 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simadila Educ’Action - Éducation pour tous</title>
-    <!-- Fonts -->
+    <title>Simadila Educ’Action - À Propos</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap"
         rel="stylesheet">
-    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
-    <!-- Header -->
     <header>
         <div class="container header-container">
             <a href="index.html" class="logo">
                 <img src="staticfiles/img/LOGO DE SIMADILA.jpeg" alt="Logo Simadila" class="logo-img">
                 <div>Simadila <span>Educ’Action</span></div>
             </a>
-            <!-- Hamburger Button -->
             <button class="hamburger" aria-label="Menu">
                 <span></span>
                 <span></span>
@@ -30,9 +25,9 @@
             </button>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="index.html">Accueil</a></li>
                     <li><a href="mission.html">Mission</a></li>
-                    <li><a href="about.html">À Propos</a></li>
+                    <li><a href="about.html" class="active">À Propos</a></li>
                     <li><a href="gallery.html">Galerie</a></li>
                     <li><a href="videos.html">Vidéos</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -41,26 +36,32 @@
         </div>
     </header>
 
-    <!-- Hero Section (Dynamic Video) -->
-    <section class="hero" id="accueil">
-        <!-- Video Background -->
-        <video autoplay muted loop class="video-background" poster="staticfiles/img/boy-holding-white-paper-school.jpg">
-            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
-                type="video/mp4">
-            Votre navigateur ne supporte pas la lecture de vidéos.
-        </video>
-
-        <div class="hero-overlay"></div>
-
-        <div class="container hero-content">
-            <h1>Éducation pour Tous en Afrique de l'Ouest</h1>
-            <p>Une initiative nécessaire et urgente de partage d'idées à travers l'action éducative, la connexion au
-                monde et une volonté accrue d'apprendre.</p>
-            <a href="mission.html" class="btn">Découvrir notre mission</a>
+    <section class="section" id="a-propos">
+        <div class="container">
+            <h2 class="section-title">À Propos</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Simadila Educ’Action est une initiative nécessaire et urgente de partage d’idées à travers
+                        l’action éducative, la connexion au monde et une volonté accrue d’apprendre, de recevoir et de
+                        transmettre la connaissance.</p>
+                    <p>En effet, le constat est tel qu’en milieux ruraux ou dans certaines contrées lointaines d’Afrique
+                        de l’Ouest, l’accès à l’éducation et aux activités socio-culturelles n’est pas aisé.</p>
+                    <p>C’est dans ce contexte que s’inscrit notre objectif d’accompagnement et notre projet de
+                        participer un tant soit peu aux soutiens scolaires afin d’insuffler l’espoir auprès des jeunes
+                        publics isolés.</p>
+                    <br>
+                    <h4>Information Légale</h4>
+                    <p>Il est fondé entre les adhérents aux présents statuts une association régie par la loi du 1er
+                        juillet 1901 et le décret du 16 août 1901, ayant pour dénomination : Simadila Educ’Action.</p>
+                </div>
+                <div class="about-image">
+                    <img src="staticfiles/img/boy-holding-white-paper-school.jpg" alt="Éducation en milieu rural"
+                        class="about-img-bg">
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -92,8 +93,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 

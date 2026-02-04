@@ -61,6 +61,26 @@ document.addEventListener('DOMContentLoaded', function () {
     // Initial Start
     startSlideShow();
 
+    // --- Mobile Menu Logic ---
+    const hamburger = document.querySelector('.hamburger');
+    const navUl = document.querySelector('nav ul');
+
+    if (hamburger && navUl) {
+        hamburger.addEventListener('click', () => {
+            navUl.classList.toggle('active');
+
+            // Optional: Animate hamburger to X
+            // hamburger.classList.toggle('open');
+        });
+
+        // Close menu when clicking a link
+        navUl.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navUl.classList.remove('active');
+            });
+        });
+    }
+
     // --- Scroll Animations ---
     const observerOptions = {
         root: null,

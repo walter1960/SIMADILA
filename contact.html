@@ -4,25 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simadila Educ’Action - Éducation pour tous</title>
-    <!-- Fonts -->
+    <title>Simadila Educ’Action - Contact</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap"
         rel="stylesheet">
-    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
-    <!-- Header -->
     <header>
         <div class="container header-container">
             <a href="index.html" class="logo">
                 <img src="staticfiles/img/LOGO DE SIMADILA.jpeg" alt="Logo Simadila" class="logo-img">
                 <div>Simadila <span>Educ’Action</span></div>
             </a>
-            <!-- Hamburger Button -->
             <button class="hamburger" aria-label="Menu">
                 <span></span>
                 <span></span>
@@ -30,37 +25,38 @@
             </button>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="index.html">Accueil</a></li>
                     <li><a href="mission.html">Mission</a></li>
                     <li><a href="about.html">À Propos</a></li>
                     <li><a href="gallery.html">Galerie</a></li>
                     <li><a href="videos.html">Vidéos</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section (Dynamic Video) -->
-    <section class="hero" id="accueil">
-        <!-- Video Background -->
-        <video autoplay muted loop class="video-background" poster="staticfiles/img/boy-holding-white-paper-school.jpg">
-            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
-                type="video/mp4">
-            Votre navigateur ne supporte pas la lecture de vidéos.
-        </video>
-
-        <div class="hero-overlay"></div>
-
-        <div class="container hero-content">
-            <h1>Éducation pour Tous en Afrique de l'Ouest</h1>
-            <p>Une initiative nécessaire et urgente de partage d'idées à travers l'action éducative, la connexion au
-                monde et une volonté accrue d'apprendre.</p>
-            <a href="mission.html" class="btn">Découvrir notre mission</a>
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contactez-nous</h2>
+            <div class="about-content"> <!-- Reusing grid layout -->
+                <div class="about-text">
+                    <p><strong>Nous sommes à votre écoute.</strong> Pour toute question, demande de partenariat ou
+                        information sur nos actions, n'hésitez pas à nous contacter.</p>
+                    <br>
+                    <p><strong>Email:</strong> contact@simadila.org</p>
+                    <p><strong>Téléphone:</strong> +33 7 50 61 37 35</p>
+                    <p><strong>Adresse:</strong> Paris, France (Siège) / Dakar, Sénégal (Antenne)</p>
+                </div>
+                <div class="about-image" style="background: var(--light); color: var(--primary);">
+                    <!-- Map placeholder or Contact Image -->
+                    <img src="staticfiles/img/LOGO DE SIMADILA.jpeg" alt="Logo"
+                        style="width: auto; height: 150px; position:static;">
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -92,8 +88,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 
